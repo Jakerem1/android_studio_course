@@ -17,9 +17,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onBtnClick (View view) {
-        TextView txtHello = findViewById(R.id.txtMessage);
-        EditText edtTxtName = findViewById(R.id.edtTxtName);
+        TextView txtFirstName = findViewById(R.id.txtFirstName);
+        TextView txtLastName = findViewById(R.id.txtLastName);
+        TextView txtEmail = findViewById(R.id.txtEmail);
 
-        txtHello.setText("Hello " + edtTxtName.getText().toString());
+        EditText editTxtFirstName = findViewById(R.id.editTxtFirstName);
+        EditText editTxtLastName = findViewById(R.id.editTxtLastName);
+        EditText editTxtEmail = findViewById(R.id.editTxtEmail);
+
+        txtFirstName.setText("First Name: " + editTxtFirstName.getText().toString());
+        txtLastName.setText("Last Name: " + editTxtLastName.getText().toString());
+        txtEmail.setText("Email: " + editTxtEmail.getText().toString());
     }
 }
